@@ -12,7 +12,7 @@ class Dog:
     say(self):
        Prints 'Гав!'
     '''
-    def __init__(self, name=None):
+    def __init__(self, name):
         '''
         Function that initializes attributes of class instances
 

@@ -7,6 +7,8 @@ class Game:
     Attributes:
     teams :  dictionary
             name of the commands
+    score :  dictionary
+            score of the game
     '''
 
     def __init__(self, teams):
@@ -71,7 +73,7 @@ class Game:
         String representation method
 
         '''
-        return f'Teams : {self.teams}'
+        return f'Teams = {self.teams}, score = {self.score}'
     
     def __repr__(self):
         '''

@@ -8,14 +8,6 @@ class NotSleeping:
     sheep_count : int
            count of sheeps
 
-    Methods:
-    add_sheep(self):
-            method that counts sheep
-    lost(self):
-            method that resets the counter
-    get_count_sheeps(self):
-            method that outputs the number of sheep
-
     '''
     def __init__(self):
         '''

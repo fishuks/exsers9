@@ -7,7 +7,10 @@ class TrafficLight:
     Attributes:
     permissible_values : list
                 list of colors
-       
+    current_signal : str
+                current signal of Traffic Light
+    previous_signal : str
+                previous signal of Traffic Light
     '''
     permissible_values = ['Зеленый', 'Желтый', 'Красный']
 
@@ -45,7 +48,8 @@ class TrafficLight:
         '''
         String representation method
         '''
-        return f'TrafficLight(current_signal = {self.current_signal})'
+        return f'Current_signal = {self.current_signal}, previous signal = {self.previous_signal}\
+permissible_values = {["Зеленый", "Желтый", "Красный"]}'
     
     def __repr__(self):
         '''

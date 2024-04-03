@@ -7,11 +7,7 @@ class NotSleeping:
     Attributes:
    sheep_count : int
            count of sheeps
-
-    Methods:
-    add_sheep(self):
-            method that counts sheep
-       
+                  
     '''
     def __init__(self):
         '''

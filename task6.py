@@ -7,6 +7,10 @@ class Point:
     Attributes:
     tuple_coordinates :  tuple
             coordinates of point 
+    x : int 
+            X coordinates of point 
+    y : int
+            Y coordinates of point 
     '''
 
     def __init__(self, tuple_coordinates = (0,0)):

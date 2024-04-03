@@ -18,11 +18,6 @@ class User:
         gender=None : str
                 users gender 
 
-    Methods:
-    update(self, **kwargs):
-            method that updates values
-     __str__(self):
-            string representation method
     '''
 
     def __init__(self, id, nick_name, first_name, last_name=None, middle_name=None, gender=None):

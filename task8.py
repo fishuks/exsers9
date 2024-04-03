@@ -1,11 +1,16 @@
 class MorseMsg:
     '''
     Class of MorseMsg
+
     ...
 
     Attributes:
-   encoded_message : str 
+    encoded_message : str 
             massege
+    translate_ru : list
+            list with transated letters in russian
+    translate_eng : list
+            list with translated letters in english
        
     '''
     def __init__(self, encoded_message):
@@ -137,14 +142,14 @@ class MorseMsg:
         '''
         volwels = []
         if lang == 'ru':
-            for letter in 'aоуыэеёиюя'.upper ():
-                if letter in self.translate_ru:
+            for  letter in self.translate_ru:
+                if letter in 'aоуыэеёиюя'.upper ():
                     volwels.append(letter)
             return volwels
         
         elif lang == 'eng':
-            for letter in 'aoeiuy'.upper ():
-                if letter in self.translate_eng:
+            for  letter in self.translate_eng:
+                if letter in 'aoeiuy'.upper ():
                     volwels.append(letter)
             return volwels
         
@@ -162,21 +167,21 @@ class MorseMsg:
         '''
         consonats = []
         if lang == 'ru':
-            for letter in 'БВГДЖЗЙКЛМНПРСТФХЦЧШЩ':
-                if letter in self.translate_ru:
+            for letter in self.translate_ru:
+                if letter in 'БВГДЖЗЙКЛМНПРСТФХЦЧШЩ':
                     consonats.append(letter)
             return consonats
         
         elif lang == 'eng':
-            for letter in 'bcdfghjklmnpqrstvwxyz'.upper ():
-                if letter in self.translate_eng:
+            for letter in self.translate_eng:
+                if letter in 'bcdfghjklmnpqrstvwxz'.upper ():
                    consonats.append(letter)
             return consonats
     def __str__(self):
         '''
         String representation method
         '''
-        f'{self.translate_ru}, {self.translate_eng}'
+        f'Translate in ru:{self.translate_ru}, Translate in eng:{self.translate_eng}'
 
     def __repr__(self):
         '''
